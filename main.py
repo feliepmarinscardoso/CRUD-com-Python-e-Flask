@@ -11,7 +11,7 @@ db = mysql.connector.connect(
    database = 'api_python'
 )
 
-# Rota para criar um novo usuário
+# Rota para cadastrar um usuário
 @app.route('/users/create', methods = ['POST'])
 def create_user():
     data = request.get_json()
